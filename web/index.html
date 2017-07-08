@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>网易游戏首页</title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/hover.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/jq.js"></script>
+    <script src="../js/animateV2.js"></script>
+    <script src="../js/js.js"></script>
+</head>
+<body>
+    <!--顶部通栏  开始-->
+    <div class="topBar" id="topBar">
+        <div class="container clearfix">
+            <div class="logo fl">
+                <h1>
+                    <a href="#">网易游戏</a>
+                </h1>
+            </div>
+            <div class="supNav fl">
+                <ul>
+                    <li><a href="#">奇遇俱乐部</a></li>
+                    <li><i>.</i><a href="#">关于网易游戏</a></li>
+                    <li><i>.</i><a href="#">爱玩网</a></li>
+                    <li><i>.</i><a href="#">游戏热爱着</a></li>
+                    <li><i>.</i><a href="#">网易游戏APP</a></li>
+                    <li><i>.</i><a href="#">人才招聘</a></li>
+                    <li><i>.</i><a href="#">客服中心</a></li>
+                </ul>
+            </div>
+            <div class="hanbeg">
+                <i></i>
+                <span>游戏列表</span>
+            </div>
+            <div class="close">
+                <span></span>
+            </div>
+            <div class="content">
+                <div class="off"></div>
+                <div class="t clearfix">
+                    <h2 class="fl">
+                        <div class="login-reg">
+                            <a href="javascript:void(0);">登录</a><i>|</i><a href="javascript:void(0);">注册</a>
+                        </div>
+                        <!--如果用户进行登录之后会显示他的用户名-->
+                        <div class="info">
+                            <span>欢迎，</span><em></em><span>来到网易游戏首页</span>  <a href="javascript:void(0);"onclick='window.location.reload(true)'>退出登录</a>
+                        </div>
+                    </h2>
+                    <div class="tr">
+                        <span class="new"><i></i>最新游戏</span>
+                        <span class="hot"><i></i>热门游戏</span>
+                    </div>
+                </div>
+                <div class="cen">
+                    <div class="client">
+                        客户端游戏
+                    </div>
+                    <div class="mobile">
+                        手机游戏
+                    </div>
+                </div>
+                <div class="bot">
+                    <div class="roles fl">
+                        <h5>角色扮演</h5>
+                        <ul class="juese-left">
+                            <li><a href="#">梦幻西游电脑版</a><em class="hot"></em></li>
+                            <li><a href="#">大话2经典版</a><em class="hot"></em></li>
+                            <li><a href="#">西楚霸王</a><em class="new"></em></li>
+                            <li><a href="#">大话2免费版</a></li>
+                            <li><a href="#">新大话2免费版</a></li>
+                            <li><a href="#">大唐无双零</a></li>
+                            <li><a href="#">武魂2</a></li>
+                            <li><a href="#">斩魂</a></li>
+                            <li><a href="#">魔兽世界</a></li>
+                        </ul>
+                        <ul class="juese-right">
+                            <li><a href="#">天下3</a><em class="hot"></em></li>
+                            <li><a href="#">天瑜</a><em class="hot"></em></li>
+                            <li><a href="#">新倩女幽魂</a><em class="new"></em></li>
+                            <li><a href="#">新大话3经典版</a></li>
+                            <li><a href="#">镇魔曲</a></li>
+                            <li><a href="#">龙魂时刻</a></li>
+                            <li><a href="#">精灵传说</a></li>
+                            <li><a href="#">新飞飞</a></li>
+                            <li><a href="#">暗坏破坏神3</a></li>
+                        </ul>
+                    </div>
+                    <div class="jingji fl">
+                        <h5>竞技/休闲</h5>
+                        <ul>
+                            <li><a href="#">守望先锋</a><em class="new"></em></li>
+                            <li><a href="#">突击英雄</a><em class="new"></em></li>
+                            <li><a href="#">夺宝联盟</a><em class="new"></em></li>
+                            <li><a href="#">无尽战区</a><em class="new"></em></li>
+                            <li><a href="#">战意</a><em class="new"></em></li>
+                            <li><a href="#">秘境对决</a><em class="new"></em></li>
+                            <li><a href="#">风暴英雄</a></li>
+                            <li><a href="#">星际争霸2</a></li>
+                            <li><a href="#">英雄三国</a></li>
+                            <li><a href="#">炉石传说</a></li>
+                        </ul>
+                    </div>
+                    <div class="rmtj fl">
+                        <h5>竞技/休闲</h5>
+                        <ul>
+                            <li><a href="#">梦幻西游手游</a><em class="hot"></em></li>
+                            <li><a href="#">大话西游手游</a><em class="hot"></em></li>
+                            <li><a href="#">倩女幽魂手游</a><em class="hot"></em></li>
+                            <li><a href="#">阴阳师</a><em class="hot"></em></li>
+                            <li><a href="#">率土之滨</a><em class="hot"></em></li>
+                            <li><a href="#">Raven：掠夺者</a><em class="hot"></em></li>
+                            <li><a href="#">大唐无双手游</a><em class="hot"></em></li>
+                            <li><a href="#">乱斗西游2</a><em class="hot"></em></li>
+                            <li><a href="#">梦幻西游无双版</a><em class="hot"></em></li>
+                            <li><a href="#">功夫熊猫3</a></li>
+                            <li><a href="#">西游神魔</a></li>
+                            <li><a href="#">时空之刃</a></li>
+                            <li><a href="#">梦想星城</a></li>
+                            <li><a href="#">乖离性百万亚瑟王</a></li>
+                            <li><a href="#">有杀气童话</a></li>
+                        </ul>
+                    </div>
+                    <div class="xptj fl">
+                        <h5>竞技/休闲</h5>
+                        <ul class="xptj1 fl">
+                            <li><a href="#">天下手游</a><em class="new"></em></li>
+                            <li><a href="#">秘宝猎人</a><em class="new"></em></li>
+                            <li><a href="#">天启联盟</a><em class="new"></em></li>
+                            <li><a href="#">镇魔曲手游</a><em class="new"></em></li>
+                            <li><a href="#">迷雾世界</a><em class="new"></em></li>
+                            <li><a href="#">坦克连</a><em class="new"></em></li>
+                            <li><a href="#">大航海之路</a></li>
+                            <li><a href="#">小时代官方游戏</a></li>
+                            <li><a href="#">楚留香</a></li>
+                            <li><a href="#">大富翁9</a></li>
+                            <li><a href="#">飞刀又见飞刀</a></li>
+                            <li><a href="#">天下X天下</a></li>
+                            <li><a href="#">无尽神域</a></li>
+                            <li><a href="#">魔天记</a></li>
+                            <li><a href="#">命运起源</a></li>
+                            <li><a href="#">童话大冒险</a></li>
+                            <li><a href="#">神魔劫</a></li>
+                            <li><a href="#">蘑菇战争</a></li>
+                            <li><a href="#">我朝有马</a></li>
+                            <li><a href="#">迷你西游</a></li>
+                            <li><a href="#">实况俱乐部</a></li>
+                        </ul>
+                        <ul class="xptj2 fl">
+                            <li><a href="#">Minecraft我的世界</a><em class="new"></em></li>
+                            <li><a href="#">大话西游热血版</a><em class="new"></em></li>
+                            <li><a href="#">叛逆性百万亚瑟王</a><em class="new"></em></li>
+                            <li><a href="#">秘境对决</a><em class="new"></em></li>
+                            <li><a href="#">光明大陆</a><em class="new"></em></li>
+                            <li><a href="#">天骄铁骑</a><em class="new"></em></li>
+                            <li><a href="#">功夫熊猫官方手游</a></li>
+                            <li><a href="#">妖刀少女异闻录</a></li>
+                            <li><a href="#">魂之幻影</a></li>
+                            <li><a href="#">无限战争</a></li>
+                            <li><a href="#">黑暗启元</a></li>
+                            <li><a href="#">异次元战姬</a></li>
+                            <li><a href="#">勇士x勇士</a></li>
+                            <li><a href="#">雨血：影之刃</a></li>
+                            <li><a href="#">蛋糕物语</a></li>
+                            <li><a href="#">暴走骑士团</a></li>
+                            <li><a href="#">火拼萌萌消</a></li>
+                            <li><a href="#">绝代双骄</a></li>
+                            <li><a href="#">口袋侏罗纪</a></li>
+                            <li><a href="#">来自星星的你</a></li>
+                            <li><a href="#">花语月</a></li>
+                        </ul>
+                        <ul class="xptj3 fl">
+                            <li><a href="#">我守护的一切</a><em class="new"></em></li>
+                            <li><a href="#">永远的7日之都</a><em class="new"></em></li>
+                            <li><a href="#">元气战姬学院</a><em class="new"></em></li>
+                            <li><a href="#">魔法禁书目录</a><em class="new"></em></li>
+                            <li><a href="#">荆棘王座</a><em class="new"></em></li>
+                            <li><a href="#">无尽战区·觉醒</a><em class="new"></em></li>
+                            <li><a href="#">猫和老鼠官方手游</a></li>
+                            <li><a href="#">劲舞团</a></li>
+                            <li><a href="#">曙光先锋</a></li>
+                            <li><a href="#">陆小凤传奇</a></li>
+                            <li><a href="#">伏魔咒</a></li>
+                            <li><a href="#">永恒边境</a></li>
+                            <li><a href="#">斩魂手游版</a></li>
+                            <li><a href="#">弹弹猴</a></li>
+                            <li><a href="#">皇牌机娘</a></li>
+                            <li><a href="#">倩女幽魂录</a></li>
+                            <li><a href="#">超能动物联盟</a></li>
+                            <li><a href="#">小李飞刀</a></li>
+                            <li><a href="#">无限幻斗</a></li>
+                            <li><a href="#">主公莫慌</a></li>
+                            <li><a href="#">惊梦</a></li>
+                        </ul>
+                        <ul class="xptj4 fl">
+                            <li><a href="#">终结者2官方手游</a><em class="new"></em></li>
+                            <li><a href="#">坦克世界闪击战</a><em class="new"></em></li>
+                            <li><a href="#">萌王EX</a><em class="new"></em></li>
+                            <li><a href="#">三国如龙传</a><em class="new"></em></li>
+                            <li><a href="#">重装突击</a><em class="new"></em></li>
+                            <li><a href="#">三少爷的剑</a><em class="new"></em></li>
+                            <li><a href="#">貂蝉的移动城堡</a></li>
+                            <li><a href="#">永恒文明</a></li>
+                            <li><a href="#">大唐游仙记</a></li>
+                            <li><a href="#">狩猎纪元</a></li>
+                            <li><a href="#">天下HD</a></li>
+                            <li><a href="#">钢铁黎明</a></li>
+                            <li><a href="#">星际总动员</a></li>
+                            <li><a href="#">圣灵觉醒</a></li>
+                            <li><a href="#">忍者必须死2</a></li>
+                            <li><a href="#">契约兵团</a></li>
+                            <li><a href="#">将临天下</a></li>
+                            <li><a href="#">格罗亚传奇</a></li>
+                            <li><a href="#">千岛物语</a></li>
+                            <li><a href="#">烽火王师</a></li>
+                            <li><a href="#">十万个女妖精
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--顶部通栏  结束-->
+
+
+    <!--banner区域   开始-->
+    <div class="banner" id="banner">
+        <ul>
+            <li class="li01">
+                <a href="#"><span></span></a>
+               <div class="container">
+                   <div class="left fl">
+                       <h2>天下告白季</h2>
+                       <h3>势力人气战今日开启</h3>
+                       <p>这天下，少年都在玩！地表最强势力人气战今日开战，上大荒约啊，人气皇冠限量头饰参赛就送！新服“玄素天成”现已开启，等你加萌！</p>
+                       <a href="#">查看详情</a>
+                   </div>
+               </div>
+            </li>
+            <li class="li02">
+                <a href="#"><span></span></a>
+                <div class="container">
+                    <div class="left fl">
+                        <h2>秘宝猎人 新版本来袭</h2>
+                        <h3>逗趣好玩，停不下来</h3>
+                        <p>5月12日新版本上线，全新挑战副本难度——噩梦难度即将开启，更有PVP擂台占领赛，带来更加刺激的射击体验！在遗迹文明与科技幻想共存的世界里，和伙伴们出发去冒险！</p>
+                        <a href="#">查看详情</a>
+                    </div>
+                </div>
+            </li>
+            <li class="li03">
+                <a href="#"><span></span></a>
+                <div class="container">
+                    <div class="left fl">
+                        <h2>《率土之滨》征兵季开启</h2>
+                        <h3>万人国战一触即发</h3>
+                        <p>厉兵秣马，枕戈待旦，全自由沙盘战略手游《率土之滨》征兵季现已开启。大量武将、战法全面增强，典藏卡、典籍卡持续增加，更有全新战场与全新游戏机制即将到来，你准备好在这个自由沙盘乱世中，号令群雄征战天下了吗！</p>
+                        <a href="#">查看详情</a>
+                    </div>
+                </div>
+            </li>
+            <li class="li04">
+                <a href="#"><span></span></a>
+                <div class="container">
+                    <div class="left fl">
+                        <h2>秘宝猎人 新版本来袭</h2>
+                        <h3>逗趣好玩，停不下来</h3>
+                        <p>5月12日新版本上线，全新挑战副本难度——噩梦难度即将开启，更有PVP擂台占领赛，带来更加刺激的射击体验！在遗迹文明与科技幻想共存的世界里，和伙伴们出发去冒险！</p>
+                        <a href="#">查看详情</a>
+                    </div>
+                </div>
+            </li>
+            <li class="li05">
+                <a href="#"><span></span></a>
+                <div class="container">
+                    <div class="left fl">
+                        <h2>秘宝猎人 新版本来袭</h2>
+                        <h3>逗趣好玩，停不下来</h3>
+                        <p>5月12日新版本上线，全新挑战副本难度——噩梦难度即将开启，更有PVP擂台占领赛，带来更加刺激的射击体验！在遗迹文明与科技幻想共存的世界里，和伙伴们出发去冒险！</p>
+                        <a href="#">查看详情</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="arrow">
+            <a href="javascript:void(0)" class="prev"></a>
+            <a href="javascript:void(0)" class="next"></a>
+        </div>
+
+        <div class="container">
+            <div class="square">
+                <i class="active"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+            <!--banner区域   结束-->
+
+
+            <!--tab切换效果  开始-->
+
+            <div class="tab" id="tab">
+                <div class="leftList">
+                   <div class="d01">
+                       <a href="javascript:void(0)">
+                           <i></i>  <!--左边的边框-->
+                           <span></span>
+                           <div class="right">
+                               <h4>阴阳师</h4>
+                               <p>势力人气战今日开始</p>
+                           </div>
+                           <s></s>
+                       </a>
+                   </div>
+                    <div class="d02">
+                        <a href="javascript:void(0)">
+                            <i></i>  <!--左边的边框-->
+                            <span></span>
+                            <div class="right">
+                                <h4>迷雾世界</h4>
+                                <p>势力人气战今日开始</p>
+                            </div>
+                            <s></s>
+                        </a>
+                    </div>
+                    <div class="d03">
+                        <a href="javascript:void(0)">
+                            <i></i>
+                            <span></span>
+                            <div class="right">
+                                <h4>我守护的一切</h4>
+                                <p>势力人气战今日开始</p>
+                            </div>
+                            <s></s>
+                        </a>
+                    </div>
+                    <div class="d04">
+                        <a href="javascript:void(0)">
+                            <i></i>
+                            <span></span>
+                            <div class="right">
+                                <h4>率土之滨</h4>
+                                <p>势力人气战今日开始</p>
+                            </div>
+                            <s></s>
+                        </a>
+                    </div>
+                    <div class="d05">
+                        <a href="javascript:void(0)">
+                            <i></i>
+                            <span></span>
+                            <div class="right">
+                                <h4>大唐无双</h4>
+                                <p>势力人气战今日开始</p>
+                            </div>
+                            <s></s>
+                        </a>
+                    </div>
+                </div>
+                <div class="cenImg">
+                    <div><a href="#"><img src="../images/yys.jpg" alt=""/></a></div>
+                    <div><a href="#"><img src="../images/cli02.png" alt=""/></a></div>
+                    <div><a href="#l"><img src="../images/cli03.png" alt=""/></a></div>
+                    <div><a href="#"><img src="../images/cli04.png" alt=""/></a></div>
+                    <div><a href="#"><img src="../images/cli05.png" alt=""/></a></div>
+                </div>
+
+                <div class="rightNew">
+                    <h3>你见过这么特别的MMO么？填问卷抽话费！</h3>
+                    <div class="listNew">
+                        <div><a href="#"> 致所有《我的世界》玩家</a> <span>05-16</span></div>
+                        <div><a href="#"> 《天下》手游告白季暖心开启，势力人气战火热进行中！</a> <span>05-16</span></div>
+                        <div><a href="#"> 网易游戏联合9大跨界品牌，给玩家送出520特别好礼</a> <span>05-16</span></div>
+                        <div><a href="#"> “打游戏都是死肥宅”？ 网易游戏教你如何优雅地怼回去</a> <span>05-16</span></div>
+                        <div><a href="#"> 实时沙盘推演 《率土之滨》万人国战一触即发</a> <span>05-16</span></div>
+                        <div><a href="#"> [三石精选]卫生间的细节也要优雅宜人</a> <span>05-16</span></div>
+                    </div>
+                </div>
+            </div>
+            <!--tab切换效果  结束-->
+        </div>
+    </div>
+    <!--banner区域   结束-->
+
+
+    <!--main 区域 开始-->
+
+    <div class="main">
+        <div class="container clearfix">
+            <div class="hotGame">
+                <div class="hotGame-top">
+                    <h3>热门游戏</h3>
+                    <span>换一批 <i></i> </span>
+                </div>
+                <div class="hotGamp-bot">
+                    <ul class="ul01 clearfix">
+                        <li class="hvr-pulse-grow">
+                            <a href="../../阴阳师/web/index.html">
+                                <img src="../images/li01.png" alt=""/>
+                            </a>
+                            <div class="content">
+                                <h3>阴阳师手游</h3>
+                                <p>2017全新资料片“”龙女来了</p>
+                                <a href="#">进入官网→</a>
+                            </div>
+                        </li>
+                        <li class="hvr-pulse-grow">
+                            <a href="../../../王磊(大唐无双)/dt_index.html"><img src="../images/li02.png" alt=""/></a>
+                            <div class="content">
+                                <h3>《大唐无双》手游</h3>
+                                <p>在无拘束的战斗中追寻淋漓尽致的搏杀快感，全新职业“男无名”邀您一起探秘这</p>
+                                <a href="#">进入官网→</a>
+                            </div>
+                        </li>
+                        <li class="hvr-pulse-grow">
+                            <a href="../../../王健(我守护的一切)/index.html"><img src="../images/li03.png" alt=""/></a>
+                            <div class="content">
+                                <h3>我守护的一切</h3>
+                                <p>剑气纵横三万里，一剑光寒十九洲。网易国风精品——《三少爷的剑》今日全平台</p>
+                                <a href="#">进入官网→</a>
+                            </div>
+                        </li>
+                        <li class="ts hvr-pulse-grow">
+                            <a href="../../../潘乐(迷雾世界)/miwushijie.html"><img src="../images/li04.png" alt=""/></a>
+                            <div class="content">
+                                <h3>《迷雾世界》</h3>
+                                <p>网易策略探索MMO手游《迷雾世界》喜迎公测满月，全新英雄，全新玩法！无限好</p>
+                                <a href="#">进入官网→</a>
+                            </div>
+                        </li>
+                        <li class="hvr-pulse-grow">
+                            <a href="../../../卢艳敏(率土之滨)/index.html"><img src="../images/li05.png" alt=""/></a>
+                            <div class="content">
+                                <h3>率土之滨</h3>
+                                <p>男影刹降临！全新家园系统上线，海量美观摆件！灵兽创新升星、多阶变异。</p>
+                                <a href="#">进入官网→</a>
+                            </div>
+                        </li>
+                        <li class="hvr-pulse-grow">
+                            <a href="../../倩女幽魂/web/index.html"><img src="../images/li06.png" alt=""/></a>
+                            <div class="content">
+                                <h3>倩女幽魂</h3>
+                                <p>AVG+RPG手游《永远的7日之都》，4月28日官方封闭测试开启。</p>
+                                <a href="#">进入官网→</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <ul class="ul02 clearfix">
+                        <li class="ts">
+                            <a href="#"><img src="../images/li07.png" alt=""/></a>
+                            <div class="content">
+                                <h3>《倩女幽魂》手游</h3>
+                                <p>新一代国民玄幻手游，“三生有幸遇到你”资料片精彩开启，新主角剧情新职业</p>
+                                <a href="#">进入官网→</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../images/li08.png" alt=""/></a>
+                            <div class="content">
+                                <h3>《大富翁9》</h3>
+                                <p>国民经典游戏《大富翁9》即将迎来一周岁生日，仙剑角色景天也强势登场！</p>
+                                <a href="#">进入官网→</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../images/li09.png" alt=""/></a>
+                            <div class="content">
+                                <h3>《三少爷的剑》</h3>
+                                <p>天下热爱者告白季开启，地表最强势力人气战今日开战，人气皇冠限量头饰参赛就</p>
+                                <a href="#">进入官网→</a>
+                            </div>
+                        </li>
+                        <li class="ts">
+                            <a href="#"><img src="../images/li10.png" alt=""/></a>
+                            <div class="content">
+                                <h3>《迷雾世界》</h3>
+                                <p>回归游戏本质，告别重度乏味，打造充满热血和乐趣的冒险体验！</p>
+                                <a href="#">进入官网→</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../images/li11.png" alt=""/></a>
+                            <div class="content">
+                                <h3>镇魔曲手游</h3>
+                                <p>全自由沙盘战略手游《率土之滨》征兵季现已开启，沙盘推演，万人国战一触即</p>
+                                <a href="#">进入官网→</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../images/li12.png" alt=""/></a>
+                            <div class="content">
+                                <h3>《永远的7日之都》</h3>
+                                <p>3D对战卡牌游戏 《秘境对决》，5月4日官方首测开启</p>
+                                <a href="#">进入官网→</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <ul class="ul03 clearfix">
+                        <li class="ts">
+                            <a href="#"><img src="../images/li13.png" alt=""/></a>
+                            <div class="content">
+                                <h3>《秘宝猎人》</h3>
+                                <p>新一代国民玄幻手游，“三生有幸遇到你”资料片精彩开启，新主角剧情新职业</p>
+                                <a href="#">进入官网→</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../images/li14.png" alt=""/></a>
+                            <div class="content">
+                                <h3>《三国如龙传》</h3>
+                                <p>国民经典游戏《大富翁9》即将迎来一周岁生日，仙剑角色景天也强势登场！</p>
+                                <a href="#">进入官网→</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../images/li15.png" alt=""/></a>
+                            <div class="content">
+                                <h3>《天下》手游</h3>
+                                <p>天下热爱者告白季开启，地表最强势力人气战今日开战，人气皇冠限量头饰参赛就</p>
+                                <a href="#">进入官网→</a>
+                            </div>
+                        </li>
+                        <li class="ts">
+                            <a href="#"><img src="../images/li16.png" alt=""/></a>
+                            <div class="content">
+                                <h3>《率土之滨》</h3>
+                                <p>回归游戏本质，告别重度乏味，打造充满热血和乐趣的冒险体验！</p>
+                                <a href="#">进入官网→</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../images/li17.png" alt=""/></a>
+                            <div class="content">
+                                <h3>《秘宝猎人》</h3>
+                                <p>全自由沙盘战略手游《率土之滨》征兵季现已开启，沙盘推演，万人国战一触即</p>
+                                <a href="#">进入官网→</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../images/li05.png" alt=""/></a>
+                            <div class="content">
+                                <h3>《坦克连》</h3>
+                                <p>3D对战卡牌游戏 《秘境对决》，5月4日官方首测开启</p>
+                                <a href="#">进入官网→</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="xycs">
+                <div class="xics-top">
+                    <h3>新游测试 </h3>
+                </div>
+                <div class="xics-bot">
+                    <ul class="ullist clearfix">
+                        <li class="li001">
+                            <a href="#">
+                                <span class="fl left"></span>
+                                <div class="right fl">
+                                    <h3>三少爷的剑</h3>
+                                    <p>全平台公测</p>
+                                    <i>5-4</i>
+                                    <div class="arr-Right"></div>
+                                </div>
+                            </a>
+
+                        </li>
+                        <li class="li002">
+                            <a href="#">
+                            <span class="fl left"></span>
+                            <div class="right fl">
+                                <h3>永恒边境</h3>
+                                <p>全平台公测</p>
+                                <i>5-4</i>
+                                <div class="arr-Right"></div>
+                            </div>
+                            </a>
+                        </li>
+                        <li class="li003">
+                            <a href="#">
+                            <span class="fl left"></span>
+                            <div class="right fl">
+                                <h3>狩猎纪元</h3>
+                                <p>全平台公测</p>
+                                <i>5-4</i>
+                                <div class="arr-Right"></div>
+                            </div>
+                            </a>
+                        </li>
+                        <li class="li004">
+                            <a href="#">
+                            <span class="fl left"></span>
+                            <div class="right fl">
+                                <h3>武魂2</h3>
+                                <p>全平台公测</p>
+                                <i>5-4</i>
+                                <div class="arr-Right"></div>
+                            </div>
+                            </a>
+                        </li>
+                        <li class="li005">
+                            <a href="#">
+                            <span class="fl left"></span>
+                            <div class="right fl">
+                                <h3>荆棘王座</h3>
+                                <p>全平台公测</p>
+                                <i>5-4</i>
+                                <div class="arr-Right"></div>
+                            </div>
+                            </a>
+                        </li>
+                        <li class="li006">
+                            <span class="fl left"></span>
+                            <div class="right fl">
+                                <h3>坦克连</h3>
+                                <p>全平台公测</p>
+                                <i>5-4</i>
+                                <div class="arr-Right"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--main 区域 结束-->
+
+
+    <!--实现3D旋转效果  开始-->
+    <div class="Rotate">
+        <div class="container">
+            <div class="banne-3D">
+                <ul>
+                    <li><span></span><span></span><span></span><span></span></li>
+                    <li><span></span><span></span><span></span><span></span></li>
+                    <li><span></span><span></span><span></span><span></span></li>
+                    <li><span></span><span></span><span></span><span></span></li>
+                </ul>
+                <ol>
+                    <li class="active">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!--实现3D旋转效果  结束-->
+
+
+
+    <!--手风琴布局  开始-->
+    <div class="sfq">
+
+        <div class="container">
+        <div class="fq" id="fq">
+            <div class="f1">
+                <img src="../images/wy01.jpg" alt=""/>
+                <i></i>
+            </div>
+            <div class="f2">
+                <img src="../images/wy02.jpg" alt=""/>
+                <i></i>
+            </div>
+            <div class="f3">
+                <img src="../images/wy06.jpg" alt=""/>
+                <i></i>
+            </div>
+            <div class="f4">
+                <img src="../images/wy04.jpg" alt=""/>
+                <i></i>
+            </div>
+            <div class="f5">
+                <img src="../images/wy05.jpg" alt=""/>
+                <i></i>
+            </div>
+            <div class="f6">
+                <img src="../images/wy08.jpg" alt=""/>
+                <i></i>
+            </div>
+            <div class="f7">
+                <img src="../images/wy07.jpg" alt=""/>
+                <i></i>
+            </div>
+            <div class="f8">
+                <img src="../images/wy03.jpg" alt=""/>
+                <i></i>
+            </div>
+            <div class="f9">
+                <img src="../images/wy09.jpg" alt=""/>
+                <i></i>
+            </div>
+        </div>
+    </div>
+    </div>
+    <audio src="../music/ACE.mp3" id="audio01"></audio>
+    <audio src="../music/DB.mp3" id="audio02"></audio>
+    <audio src="../music/FB.mp3" id="audio03"></audio>
+    <audio src="../music/PT.mp3" id="audio04"></audio>
+    <audio src="../music/QT.mp3" id="audio05"></audio>
+    <audio src="../music/TP.mp3" id="audio06"></audio>
+    <!--手风琴布局  结束-->
+
+
+    <!--登录注册弹框效果 开始-->
+
+    <!--注册框  开始-->
+    <div class="register">
+        <div class="close">×</div>
+        <h4>注册帐号</h4>
+
+        <div class="txtIn">
+            <label for="txt">帐号：</label><input type="text" id="txt" placeholder="网易邮箱"/> <span></span>
+        </div>
+        <div class="pwdIn">
+            <label for="pwd">密码：</label><input type="password" id="pwd" placeholder="6位数密码，区分大小写"/> <span></span>
+        </div>
+        <div class="comPwdIn">
+            <label for="comPwd">确认密码：</label><input type="password" id="comPwd" placeholder="再次密码"/> <span></span>
+        </div>
+        <div class="genderIn">
+            <label for="">性别：</label>
+            <select name="" id="gender">
+            <option value="男">男</option>
+            <option value="女">女</option>
+            </select>
+            <span></span>
+        </div>
+        <div class="comIn">
+            <label for="comM">验证码：</label><input type="text" id="comM" placeholder="请随便输入四个数字作为验证码"/><span></span>
+        </div>
+        <div class="MobileIn">
+            <label for="Mobile">手机号：</label><input type="text" id="Mobile" placeholder="11位手机号码"/> <span></span>
+        </div>
+        <div class="subIn">
+            <input type="submit" value="注册" id="sub"/>
+        </div>
+    </div>
+    <!--注册框  结束-->
+
+    <!--登录窗口 开始-->
+
+    <div class="login">
+        <div class="close">×</div>
+        <div class="logintype">
+            <h3>普通登录</h3>
+            <h4>二维码登录</h4>
+        </div>
+        <div class="loginform">
+            <div class="unserName">
+                <i></i><input type="text" id="userName" placeholder="邮箱"/>
+            </div>
+            <div class="userPwd">
+                <i></i><input type="password" id="userPwd" placeholder="密码"/>
+            </div>
+            <div class="yzm">
+                <input type="text" id="yzmIn" placeholder="请依此输入“0520“,作为验证码"/>
+            </div>
+            <div class="login-In">
+                <input type="submit" id="loginIn" value="登录"/>
+            </div>
+        </div>
+    </div>
+    <!--登录窗口 结束-->
+
+
+
+    <!--模态框效果 开始-->
+    <div class="mtk" id="mtk"></div>
+    <!--模态框效果 结束-->
+
+    <!--注册弹框效果 结束-->
+
+
+
+    <!--网页底部 开始-->
+    <div class="footer">
+        <div class="container">
+            <span class="wylogo"></span>
+            <span class="wygame"></span>
+            <span class="lo"></span>
+            <div class="link">
+                <a href="#">公司简介</a><i>-</i>
+                <a href="#">客户服务</a><i>-</i>
+                <a href="#">相关法律</a><i>-</i>
+                <a href="#">网易游戏</a><i>-</i>
+                <a href="#">联系我们</a><i>-</i>
+                <a href="#">商务合作</a><i>-</i>
+                <a href="#">加入我们</a><i></i>
+                <a href="#"> 网易公司版权所有 ©1997-2017 中国网络游戏版权保护联盟举报中心</a>
+            </div>
+        </div>
+    </div>
+    <!--网页底部 结束-->
+
+
+
+</body>
+</html>

@@ -1,0 +1,1329 @@
+@charset"UTF-8";
+/*顶部通栏区域  开始*/
+
+.topBar {
+    height: 100px;
+    width: 100%;
+    /*background: pink;*/
+    background: rgba(255,255,255,0.7);
+    position: fixed;
+    z-index: 99;
+}
+
+.topBar .logo {
+    width: 177px;
+    height: 58px;
+    margin-top: 22px;
+}
+.topBar .logo h1{
+    width: 177px;
+    height: 58px;
+}
+.topBar .logo h1 a{
+    display: block;
+    height: 58px;
+    text-indent: -9999px;
+    background: url("../images/logo1_1c91104.png") no-repeat;
+}
+.topBar .supNav{
+    margin-left: 110px;
+}
+
+.topBar .supNav li{
+    float: left;
+    line-height: 100px;
+    font-size: 16px;
+}
+.topBar .supNav li i{
+    font-size: 20px;
+    font-style: normal;
+    margin-left: 25px;
+    margin-top: -5px;
+    display: inline-block;
+}
+.topBar .supNav li a{
+    margin-left: 22px;
+    display: inline-block;
+    height: 100%;
+    line-height: 100px;
+    vertical-align: middle;
+    color: #908188;
+}
+
+.topBar .container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -650px;
+}
+.topBar .hanbeg {
+    width: 120px;
+    height: 120px;
+    background: #cf1132;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.topBar .close{
+    width: 120px;
+    height: 100px;
+    background: #000;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.topBar .hanbeg i{
+    position: absolute;
+    width: 34px;
+    height: 23px;
+    left: 50%;
+    margin-left: -17px;
+    top: 45%;
+    margin-top: -12px;
+    background: url("../images/topBar_1_z_e7632fe.png") no-repeat 0 -5px;
+}
+
+.topBar .close span{
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -17px;
+    margin-top: -17px;
+    background: url("../images/topBar_1_z_e7632fe.png") no-repeat -34px 0;
+}
+.topBar .hanbeg span{
+    color: #fff;
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    font-size: 15px;
+}
+.topBar .content {
+    width: 1300px;
+    height: 0px;  /*838px是实际需要的高度*/
+    background: #282B2D;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -650px;
+    color: #fff;
+    overflow: hidden;
+    z-index: 9999;
+}
+.topBar .content .t{
+    margin-top: 12px;
+}
+.topBar .content h2 {
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    margin-left: 62px;
+    width: 500px;
+}
+.topBar .content h2 .login-reg {
+    padding-top: 10px;
+    /*display: none;*/
+}
+.topBar .content h2 .login-reg a{
+    color: #fff;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.topBar .content h2 .login-reg i{
+    font-style: normal;
+    color: #fff;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.topBar .content h2 span{
+    font-size: 16px;
+}
+.topBar .content h2 em {
+    color: #f00;
+    font-weight: 700;
+    font-size: 20px;
+    font-style: normal;
+}
+.topBar .content h2 .info {
+    padding-top: 10px;
+    display: none;
+}
+.topBar .content h2 .info a{
+    color: #fff;
+    margin-left: 15px;
+}
+.topBar .content .tr{
+    float: right;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+.topBar .content .tr span +span{
+    margin-left: 30px;
+}
+.topBar .content .tr span i{
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin-right: 3px;
+    background: url("../images/topBar_1_z_e7632fe.png") no-repeat -56px -34px;
+}
+.topBar .content .tr span.hot i{
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin-right: 3px;
+    background: url("../images/topBar_1_z_e7632fe.png") no-repeat -56px -48px;
+}
+.topBar .content .cen {
+    height: 50px;
+    background: #35373A;
+    margin-top: 10px;
+    line-height: 50px;
+}
+.topBar .content .cen .client {
+    margin-left: 32px;
+    border-left: 4px solid #DD1136;
+    color: #DD1136;
+    padding-left: 37px;
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 700;
+}
+.topBar .content .cen .mobile {
+    margin-left: 330px;
+    border-left: 4px solid #DD1136;
+    color: #DD1136;
+    padding-left: 37px;
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.topBar .content .bot {
+    margin-left: 33px;
+}
+.topBar .content .bot a{
+    color: #C3C3C3;
+}
+.topBar .content .bot h5{
+    height: 50px;
+    line-height: 50px;
+    color: #6B6B6C;
+    font-weight: 700;
+    font-size: 14px;
+}
+.topBar .content .bot li{
+    height: 28px;
+    line-height: 28px;
+    font-size: 13px;
+}
+.topBar .content .bot  li .hot{
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin-right: 3px;
+    background: url("../images/topBar_1_z_e7632fe.png") no-repeat -56px -48px;
+    margin-left: 5px;
+}
+.topBar .content .bot  li .new{
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin-right: 3px;
+    background: url("../images/topBar_1_z_e7632fe.png") no-repeat -56px -34px;
+    margin-left: 5px;
+}
+.topBar .content .bot .roles{
+    width: 274px;
+    border-right: 1px solid #454545;
+    height: 345px;
+}
+.topBar .content .bot .juese-left{
+    float: left;
+}
+.topBar .content .bot .juese-right {
+    margin-left: 30px;
+    float: left;
+}
+
+.topBar .content .bot .jingji{
+    width: 134px;
+    border-right: 1px solid #454545;
+    height: 500px;
+    padding-left: 40px;
+}
+
+.topBar .content .bot .rmtj {
+    width: 134px;
+    border-right: 1px solid #454545;
+    height: 600px;
+    padding-left: 40px;
+}
+.topBar .content .bot .xptj{
+    width: 560px;
+    padding-left: 35px;
+}
+.topBar .content .bot .xptj ul{
+    width: 140px;
+}
+.topBar .content .off {
+    width: 56px;
+    height: 14px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -28px;
+    display: none;
+    background: url("../images/topBar_1_z_e7632fe.png") no-repeat 0 -34px;
+}
+.topBar .content .off:hover{
+    background: url("../images/topBar_1_z_e7632fe.png") no-repeat 0 -48px;
+}
+/*顶部通栏区域  结束*/
+
+
+/*banner  动画区域 开始*/
+
+.banner{
+    width: 100%;
+    height: 950px;
+    overflow: hidden;
+    position: relative;
+    top: -100px;
+    left: 0;
+}
+.banner li{
+    position: absolute;
+    width: 100%;
+    height: 950px;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.banner li a{
+    position: absolute;
+    width: 100%;
+    height: 950px;
+}
+.banner li a span{
+    width: 100%;
+    height: 950px;
+    display: block;
+}
+.banner .li01  span {
+    background: url("../images/banner01.png") no-repeat center top;
+}
+.banner .li02  span {
+    background: url("../images/banner02.png") no-repeat center top;
+}
+.banner .li03  span {
+    background: url("../images/banner03.png") no-repeat center top;
+}
+.banner .li04  span {
+    background: url("../images/banner04.png") no-repeat center top;
+}
+.banner .li05  span {
+    background: url("../images/banner05.png") no-repeat center top;
+}
+.banner li img{
+    width: 100%;
+    display: block;
+}
+
+
+.banner li .container{
+    position: relative;
+}
+.banner li .container .left{
+    position: absolute;
+    top: 273px;
+    width: 490px;
+    height: 277px;
+}
+.banner li .container .left h2{
+    font-size: 33px;
+    font-weight: 700;
+    margin-left: 70px;
+}
+.banner li .container .left h3{
+    font-size: 33px;
+    margin-top: 30px;
+    font-weight: 700;
+    margin-left: 70px;
+}
+.banner li .container .left p{
+    margin-top: 50px;
+    margin-left: 70px;
+    line-height: 25px;
+    border-top: 1px solid #CF1132;
+    padding-top: 20px;
+    font-size: 13px;
+}
+.banner li .container .left a {
+    width: 140px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    display: block;
+    margin-top: 30px;
+    margin-left: 70px;
+    background: #CF0F32;
+    color: #ffffff;
+}
+
+.banner li.li03,.banner li.li04 {
+    color: #ffffff;
+}
+.banner .arrow{
+    display: none;
+}
+
+.banner .arrow a{
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 80px;
+    margin-top: -40px;
+}
+.banner .arrow a.prev{
+    left: 0;
+    background:#cf0f32 url("../images/prev_i_ccc3ed0.png") no-repeat center center;
+}
+.banner .arrow a.next{
+    right: 0;
+    background:#cf0f32 url("../images/next_i_d27c8a6.png") no-repeat center center;
+}
+.banner .container {
+    position: relative;
+    height: 950px;
+}
+.banner .container .square{
+    position: absolute;
+    bottom: 380px;
+    right: 0;
+
+}
+.banner .container .square i{
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    float: left;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+.banner .container .square i.active {
+    background: #ff0;
+    width: 14px;
+    height: 14px;
+    background: #f00;
+    border: 3px solid #fff;
+}
+
+
+.banner .tab {
+    width: 1300px;
+    height: 350px;
+    background: pink;
+    position: absolute;
+    bottom: 0;
+}
+
+.banner .leftList {
+    width: 210px;
+    height: 350px;
+    float: left;
+}
+.banner .leftList{
+    height: 350px;
+}
+.banner .leftList>div{
+    line-height: 70px;
+    height: 56px;
+    padding-top: 14px;
+    background: #272A2C;
+    position: relative;
+}
+.banner .leftList div a .right{
+    float: left;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.banner .leftList div a{
+    height: 70px;
+    width: 210px;
+    display: block;
+    padding-left: 16px;
+
+}
+.banner .leftList div .right h4{
+    color: #fff;
+    font-size: 14px;
+}
+.banner .leftList div .right p{
+    color: #5C625C;
+    font-size: 13px;
+    margin-top: 5px;
+}
+.banner .leftList>div span{
+    float: left;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+
+.banner .leftList .d01 span{
+    background: url("../images/yssico.png") no-repeat;
+    background-size: 100%;
+}
+.banner .leftList .d02 span{
+    background: url("../images/72.webp") no-repeat;
+    background-size: 100%;
+}
+.banner .leftList .d03 span{
+    background: url("../images/icon%20(1).png") no-repeat;
+    background-size: 100%;
+}
+.banner .leftList .d04 span{
+    background: url("../images/icon%20(2).png") no-repeat;
+    background-size: 100%;
+}
+.banner .leftList .d05 span{
+    background: url("../images/icon.png") no-repeat;
+    background-size: 100%;
+}
+.banner .leftList .d01{
+    background: #000;
+}
+.banner .leftList .d01 s{
+   display: block;
+}
+.banner .leftList s {
+    border: 10px solid #000;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    margin-top: -10px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    z-index: 2;
+    display: none;
+}
+.banner .leftList>div:hover s {
+    display: block;
+}
+.banner .leftList .d01 i{
+   display: block;
+}
+.banner .leftList i{
+    content: "";
+    width: 5px;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #CF0F32;
+    display: none;
+}
+.banner .leftList>div:hover i{
+    display: block;
+}
+
+/*.banner .leftList>div:hover a div:after{
+    content: "";
+    border: 10px solid #000;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    margin-top: -10px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    z-index: 2;
+}
+.banner .leftList>div:hover a div:before{
+    content: "";
+    width: 5px;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #CF0F32;
+}*/
+.banner .leftList>div:hover{
+    background: #000;
+}
+.banner .tab .cenImg {
+    width: 510px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+.banner .tab .cenImg div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.banner .tab .rightNew {
+    background: #282B2D;
+    width: 540px;
+    height: 305px;
+    float: left;
+    padding-top: 45px;
+    position: relative;
+    padding-left: 40px;
+}
+.banner .tab .rightNew h3{
+    font-size: 25px;
+    color: #CF0F32;
+    width: 500px;
+    font-weight: 700;
+    height: 75px;
+    height: 70px;
+    border-bottom: 1px solid #3D4041;
+}
+.banner .tab .rightNew .listNew a{
+    color: #ccc;
+    font-size: 13px;
+}
+.banner .tab .rightNew .listNew span{
+    float: right;
+    color: #727272;
+    font-size: 13px;
+}
+.banner .tab .rightNew .listNew {
+    position: absolute;
+    top: 120px;
+    left: 40px;
+    width: 460px;
+    height: 273px;
+    z-index: 2;
+}
+.banner .tab .rightNew .listNew div{
+    height: 35px;
+    line-height: 35px;
+    padding-left: 22px;
+    background: url("../images/n-icon_c141505.png") no-repeat left center;
+}
+.banner .tab .rightNew .listNew div a:hover{
+    color: #fff;
+    font-weight: 700;
+}
+/*body{
+    height: 3000px;
+}*/
+/*banner  动画区域 结束*/
+.main {
+    margin-top: -100px;
+    position: relative;
+    background: #F6F7FB;
+    padding-bottom: 95px;
+}
+.main .hotGame{
+    width: 960px;
+    float: left;
+}
+.main .hotGame .hotGame-top {
+    height: 43px;
+    padding-top: 40px;
+}
+.main .hotGame .hotGame-top h3{
+    height: 23px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #272A2C;
+    border-left: 3px solid #272A2C;
+    padding-left: 15px;
+    float: left;
+    line-height: 23px;
+}
+.main .hotGame .hotGame-top span{
+    float: right;
+    margin-right: 16px;
+    cursor: pointer;
+}
+.main .hotGame .hotGame-top span i{
+    width: 20px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../images/index_1_z_b307af4.png") no-repeat -20px -37px ;
+}
+.hotGamp-bot {
+   /* padding-right: 20px ;*/
+    width: 930px;
+    height: 655px;
+    overflow: hidden;
+    position: relative;
+}
+.hotGamp-bot ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.hotGamp-bot ul{
+    display: none;
+}
+
+.hotGamp-bot ul.ul01{
+    display: block;
+}
+.main .hotGamp-bot ul li{
+    float: left;
+    margin-left: 15px;
+    margin-top: 10px;
+    position: absolute;
+    overflow: hidden;
+    display: none;
+}
+.main .hotGamp-bot ul li{
+    -webkit-transitio: all 0.4s;
+    -moz-transition:  all 0.4s;
+    -ms-transition:  all 0.4s;
+    -o-transition:  all 0.4s;
+    transition:  all 0.4s;
+}
+
+.main .hotGamp-bot ul li:nth-of-type(1){
+    left: 0;
+    top: 0;
+}
+.main .hotGamp-bot ul li:nth-of-type(2){
+     left: 315px;
+     top: 0;
+ }
+.main .hotGamp-bot ul li:nth-of-type(3){
+    left: 630px;
+    top: 0;
+}
+.main .hotGamp-bot ul li:nth-of-type(4){
+    left: 0px;
+    top: 330px;
+}
+.main .hotGamp-bot ul li:nth-of-type(5){
+    left: 315px;
+    top: 330px;
+}
+.main .hotGamp-bot ul li:nth-of-type(6){
+    left: 630px;
+    top: 330px;
+}
+.main .hotGamp-bot ul li.ts{
+    margin-left: 0;
+}
+
+.main .hotGamp-bot ul li .content{
+    width: 280px;
+    height: 145px;
+    padding-left: 20px;
+    background: #fff;
+}
+.main .hotGamp-bot ul li .content h3{
+    font-size: 20px;
+    font-weight: 700;
+    height: 52px;
+    line-height: 52px;
+}
+.main .hotGamp-bot ul li .content p{
+    color:#B3B1B1;
+    font-size: 13px;
+    line-height: 20px;
+    height: 50px;
+    border-bottom: 1px solid #EDEDED;
+}
+.main .hotGamp-bot ul li .content a{
+    /*margin-top: 100px;*/
+    line-height: 40px;
+    color: #9F9F9F;
+    float: right;
+
+}
+.main .hotGamp-bot ul li .content a:hover {
+    color: #CF0F32;
+}
+.main .xycs{
+    width: 297px;
+    float: left;
+
+}
+.main .xycs .xics-top {
+    height: 43px;
+    padding-top: 40px;
+}
+.main .xycs .xics-top h3{
+    padding-left: 15px;
+    height: 23px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #272A2C;
+    border-left: 3px solid #272A2C;
+    float: left;
+    line-height: 23px;
+}
+.main .xycs .xics-bot .ullist{
+    width: 298px;
+    border: 1px solid #EDEDED;
+}
+.main .xycs .xics-bot .ullist li{
+    width: 262px;
+    padding-left: 26px;
+    position: relative;
+    height: 107px;
+    border-bottom: 1px solid #EDEDED;
+}
+.main .xycs .xics-bot .ullist li span{
+    display: block;
+    background: url("../images/r1.png") no-repeat;
+    background-size: 100%;
+    width: 69px;
+    height: 69px;
+    border-radius: 8px;
+    margin-top: 21px;
+    float: left;
+    box-shadow: 4px 0 20px #ccc;
+}
+.main .xycs .xics-bot .ullist .li001 span{
+    background: url("../images/r1.png") no-repeat;
+    background-size: 100%;
+}
+.main .xycs .xics-bot .ullist .li002 span{
+    background: url("../images/r2.png") no-repeat;
+    background-size: 100%;
+}
+.main .xycs .xics-bot .ullist .li003 span{
+    background: url("../images/r3.png") no-repeat;
+    background-size: 100%;
+}
+.main .xycs .xics-bot .ullist .li004 span{
+    background: url("../images/r4.png") no-repeat;
+    background-size: 100%;
+}
+.main .xycs .xics-bot .ullist .li005 span{
+    background: url("../images/r5.png") no-repeat;
+    background-size: 100%;
+}
+
+.main .xycs .xics-bot .ullist .li006 span{
+    background: url("../images/r6.png") no-repeat;
+    background-size: 100%;
+}
+.main .xycs .xics-bot .ullist li .right{
+    float: left;
+    margin-top: 22px;
+    margin-left: 20px;
+}
+.main .xycs .xics-bot .ullist li .right h3{
+    font-size: 16px;
+    font-weight: 700;
+}
+.main .xycs .xics-bot .ullist li .right p{
+    line-height: 25px;
+    color: #aaa;
+    font-size: 13px;
+}
+.main .xycs .xics-bot .ullist li .right i{
+    font-style: normal;
+    line-height: 20px;
+    color: #aaa;
+}
+.main .xycs .xics-bot .ullist li .right .arr-Right {
+    background: url("../images/right.png") no-repeat;
+    width: 15px;
+    height: 28px;
+    float: right;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -14px;
+}
+
+
+
+/*3D旋转效果的实现  开始*/
+.Rotate {
+    background:#F6F7FB;
+    padding: 20px 0 30px 0;
+}
+.banne-3D{
+    width: 1200px;
+    height: 500px;
+    /*margin: 0px auto;*/
+    perspective: 800px;
+    position: relative;
+    z-index: 2;
+}
+.banne-3D ul {
+    width: 1200px;
+}
+.banne-3D ul li{
+    width: 300px;
+    height: 500px;
+    float: left;
+    position: relative;
+    transform: translateZ(-180px);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition:all 0.6s;
+
+}
+/*.banner:hover ul li{
+    transform:translateZ(-180px) rotateX(180deg);
+}*/
+.banne-3D ul li:nth-child(1) span{background-position:0;}
+.banne-3D ul li:nth-child(2) span{background-position:-300px;}
+.banne-3D ul li:nth-child(3) span{background-position:-600px;}
+.banne-3D ul li:nth-child(4) span{background-position:-900px;}
+
+.banne-3D ul li:nth-child(1){transition: 0.6s 0s;}
+.banne-3D ul li:nth-child(2){transition: 0.6s 0.1s;}
+.banne-3D ul li:nth-child(3){transition: 0.6s 0.2s;}
+.banne-3D ul li:nth-child(4){transition: 0.6s 0.3s;}
+
+.banne-3D ul li:nth-child(4){
+    z-index: -1;
+}
+.banne-3D ul li span{
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin: 0;
+    position: absolute;
+
+}
+.banne-3D ul li span:nth-child(1){
+    top:-500px;
+    transform-origin: bottom;
+    transform: translateZ(250px) rotateX(90deg);
+    background-image:url("../images/1.png");
+}
+.banne-3D ul li span:nth-child(2){
+    top: 500px;
+    transform-origin: top;
+    transform: translateZ(250px) rotateX(-90deg);
+    background-image:url("../images/2.png");
+}
+.banne-3D ul li span:nth-child(3){
+    transform: translateZ(250px);
+    background-image:url("../images/3.png");
+}
+.banne-3D ul li span:nth-child(4){
+    transform: translateZ(-250px) rotateX(180deg);
+    background-image:url("../images/4.png");
+
+}
+/*
+.banne-3D ul li span:nth-child(5){
+    width: 360px;
+    right: 200px;
+    transform-origin: right;
+    transform:translateZ(180px) rotateY(-90deg);
+}
+.banne-3D ul li span:nth-child(6){
+    width: 360px;
+    left: 200px;
+    transform-origin: left;
+    transform:translateZ(180px) rotateY(90deg);
+}*/
+.banne-3D ol{
+    width: 200px;
+    height: 30px;
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+}
+.banne-3D ol li{
+    float: left;
+    margin-left: 10px;
+    border: 1px solid #000;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.banne-3D ol .active {
+    background: gold;
+    color: #f40;
+}
+
+/*3D旋转效果的实现  结束*/
+
+
+/*手风琴效果 开始*/
+.sfq {
+    background: #F6F7FB;
+}
+.sfq .container {
+    position: relative;
+    width: 1300px;
+    margin: 0 auto;
+    height: 720px;
+}
+
+.fq {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.fq div{
+    width: 390px;
+    height: 228px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 15px 5px 10px #c0c0c0;
+}
+.fq .f1{
+    left: 0;
+    top: 0;
+}
+.fq .f2{
+    top: 0;
+    left: 405px;
+}
+.fq .f3{
+    top: 0;
+    left: 810px;
+}
+.fq .f4{
+    top: 243px;
+    left: 0;
+}
+.fq .f5{
+    top: 243px;
+    left: 405px;
+}
+.fq .f6{
+    top: 243px;
+    left: 810px;
+}
+.fq .f7{
+    top: 486px;
+    left: 0px;
+}
+.fq .f8{
+    top: 486px;
+    left: 405px;
+}
+.fq .f9{
+    top: 486px;
+    left: 810px;
+}
+/*body{
+    background: #000;
+}*/
+.fq i{
+    position: absolute;
+    background: rgba(0,0,0,.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+/*手风琴效果 结束*/
+
+
+/*登录注册 开始*/
+.register {
+    width: 800px;
+    height: 700px;
+    background: #ffffff;
+    position: absolute;
+    top: 50%;
+    margin-top: -350px;
+    left: 50%;
+    margin-left: -400px;
+    z-index: 100;
+    padding-top: 48px;
+    display: none;
+}
+.register h4{
+    padding-left: 70px;
+    font-size: 20px;
+    color: #f00;
+}
+.register label {
+    font-size: 16px;
+}
+.register input {
+    border: 1px solid #ddd;
+    width: 310px;
+    height: 44px;
+    vertical-align: middle;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.register div{
+    width: 622px;
+    height: 47px;
+    margin: 28px auto 0;
+    text-align: right;
+}
+.register div span{
+    color: #f00;
+    width: 200px;
+    height: 47px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    line-height: 47px;
+    font-size: 16px;
+    /*visibility: visible;/!*可见的*!/*/
+   /* visibility: hidden;/!*不见的但是占用位置*!/*/
+    /*margin-left: 20px;*/
+   /* background: #ff0;*/
+}
+.register div.subIn {
+    text-align: center;
+}
+.register div.subIn input{
+    margin-left: -100px;
+    background: #df9797;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1em;
+    text-align: center;
+    padding-left: 10px;
+    width: 320px;
+}
+
+.register img{
+    width: 800px;
+    display: block;
+    margin-top: 175px;
+}
+.register .genderIn {
+    margin-left: -190px;
+}
+.register .genderIn select {
+    width: 40px;
+    height: 30px;
+}
+.register .close {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    right: -35px;
+    top: -28px;
+    color: #fff;
+    font-size: 25px;
+    background: #000;
+    cursor: pointer;
+}
+
+/*登录界面 开始*/
+ .login {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     width: 450px;
+     height: 424px;
+     background: #e1f2fc;
+     margin-left: -225px;
+     margin-top: -212px;
+     z-index: 100;
+     display: none;
+ }
+
+ .login .logintype {
+     height: 49px;
+     position: relative;
+ }
+.login .logintype h3{
+    width: 224px;
+    height: 49px;
+    font-size: 20px;
+    line-height: 49px;
+    text-align: center;
+    position: absolute;
+    top: 1px;
+    background: #e1f2fc;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    border-right: 1px solid #38a6ec;
+
+}
+.login .logintype h4{
+    width: 225px;
+    height: 49px;
+    font-size: 20px;
+    line-height: 49px;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    background: #88caf4;
+    left: 225px;
+    background: #38a6ec;
+    cursor: pointer;
+}
+.login .loginform {
+    position: absolute;
+    z-index: 1;
+    top: 49px;
+    left: 0;
+    height: 375px;
+    width: 450px;
+    border-top: 1px solid #38a6ec;
+}
+
+.loginform div{
+    width: 304px;
+    height: 44px;
+    border: 1px solid #ccc;
+    margin: 16px auto 0;
+    background: #fff;
+}
+.loginform div i{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.loginform div.unserName i{
+    width: 18px;
+    height: 21px;
+    float: left;
+    vertical-align: middle;
+    background:#Fff url("../images/jlt.png") no-repeat -252px -89px;
+
+}
+.loginform div.userPwd i{
+    width: 18px;
+    height: 21px;
+    float: left;
+    vertical-align: middle;
+    background:#fff url("../images/jlt.png") no-repeat -293px -89px;
+}
+.loginform div  input {
+    float: left;
+    height: 44px;
+    width: 265px;
+    margin-left: 10px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.loginform .login-In {
+    border: none;
+}
+.loginform .login-In input{
+    width: 100%;
+    height: 44px;
+    margin-left: 0;
+    background: #79b1d5;
+    color: #c8dae7;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1em;
+}
+.login .close {
+    width: 35px;
+    height: 35px;
+    background: #000;
+    position: absolute;
+    right: -35px;
+    top: 0;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+/*登录界面 结束*/
+
+
+
+/*登录注册 结束*/
+
+/*模态框 开始*/
+
+.mtk{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    z-index: 99;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+/*模态框 结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*底部版权信息  开始*/
+.footer {
+    width: 100%;
+    height: 148px;
+    background: #272A2C;
+}
+.footer .wylogo {
+    width: 118px;
+    height: 31px;
+    float: left;
+    margin-left: 210px;
+    margin-top: 43px;
+    background: url("../images/netease.2.png") no-repeat;
+}
+.footer .wygame {
+    width: 134px;
+    height: 31px;
+    float: left;
+    margin-top: 43px;
+    background: url("../images/nie.2.png") no-repeat;
+}
+.footer .lo{
+    width: 31px;
+    height: 31px;
+    float: left;
+    margin-top: 43px;
+    margin-left: 15px;
+    background: url("../images/wen.png") no-repeat;
+}
+.footer .link {
+    float: left;
+    padding-top: 43px;
+    width: 400px;
+    line-height: 21px;
+    padding-left: 20px;
+    color: #fff;
+}
+.footer .link a{
+    color: #fff;
+}
+
+/*底部版权信息  开始*/
+
+
+
+
+
